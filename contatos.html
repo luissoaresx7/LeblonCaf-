@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leblon Café - Contato</title>
+    <link rel="shortcut icon" href="./assets/cafezinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html"><img src="./assets/cafezinho.png" alt="Logo Cafeteria"></a>
+            <nav class="navega"><a href="./index.html">Inicio</a><a href="./cafe.html">Café</a><a href="./equipe.html">Equipe</a><a href="./contatos.html">Contato</a></nav>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="./assets/Hamburger_icon.svg.png">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                  <div class="dropdown-content">
+                    <a class="dropdown_item-1" href="./index.html">Home</a>
+                    <a class="dropdown_item-2" href="./cafe.html">Café</a>
+                    <a class="dropdown_item-3" href="./equipe.html">Equipe</a>
+                    <a class="dropdown_item-4" href="./contatos.html">Contato</a>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contato">
+            <form action="" class="formulario" id="formulario" method="POST" name="formulario" novalidate>
+                <p class="form_titulo">Entre em contato conosco!</p>
+                <input type="text" class="a" placeholder="Nome" required id="nome" >
+                <input type="email" class="a" placeholder="E-mail" required id="email">
+                <input type="number" class="a" placeholder="Numero" required id="numero" max="9">
+                <p class="validaErro">Parametro(s) incorreto(s)</p>
+                <button class="botao" type="submit"  onclick="validaForm()">Enviar</button>
+            </form>
+            <div class="modalzin">
+                <p class="modal_texto">Contato Enviado com sucesso!</p>
+                <img src="./assets/ok.png" alt="">
+                <button class="modal_botao" onclick="fechaModal()">Fechar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_nome"><a href="#">Leblon Café</a></div>
+        <div class="footer_copy">© Copyright Leblon Café 2022 - Todos os direitos reservados</div>
+        <div class="footer_links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./equipe.html">Equipe</a></li>
+                <li><a href="./cafe.html">Café</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="./contatos.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer_redes">
+            <a href="#"><img src="./assets/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="./assets/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./assets/twitter.png" alt="twitter"></a>
+        </div>
+    </footer>
+    <script src="contatos.js"></script>
+</body>
+</html>
